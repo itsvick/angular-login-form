@@ -1,0 +1,30 @@
+<form (ngSubmit)="login()">
+  <label for="username">Enter username</label>
+  <input type="text" id="username" [(ngModel)]="username" name="username" />
+  <br>
+  <label for="password">Enter password</label>
+  <input type="password" id="password" [(ngModel)]="password" name="password" />
+  <br>
+
+  <label for="country">Country</label>
+  <select name="country" id="country" (change)="onCountrySelect($event)">
+    <option value=""></option>
+    <option *ngFor="let country of countries$ | async" [value]="country.name">{{country.name}}</option>
+  </select>
+
+  <br>
+  <label for="state">State</label>
+  <select name="state" id="state" [disabled]="!states$" (change)="onStateSelect($event)">
+    <option value=""></option>
+    <option *ngFor="let state of states$ | async">{{state.name}}</option>
+  </select>
+
+  <br>
+  <label for="city">City</label>
+  <select name="city" id="city" [disabled]="!cities$">
+    <option value=""></option>
+    <option *ngFor="let city of cities$ | async">{{city.name}}</option>
+  </select>
+  <br>
+  <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,27 @@
+nav {
+  background-color: darkcyan;
+  padding: 8px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  padding: 8px;
+  color: floralwhite;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
+}
+
+.active {
+  text-decoration: underline;
+  background-color: darkred;
+}
