@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  cscAuthToken: 'yxpqKOFOqW-XAPozvTsa3EEgoAU2U_20d5i77YxaQP3dCxfH2qh2M3Vy5BeUWNrGeQQ',
-  cscEmail: 'vivekkasture555@gmail.com',
+  cscAuthToken: '', // get token from here https://www.universal-tutorial.com/rest-apis/free-rest-api-for-country-state-city
+  cscEmail: '',
   cscAPIUrl: 'https://www.universal-tutorial.com'
 };
 
